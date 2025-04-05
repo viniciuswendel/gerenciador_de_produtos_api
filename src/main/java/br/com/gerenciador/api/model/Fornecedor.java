@@ -27,6 +27,9 @@ public class Fornecedor {
     @Column(name="cnpj", nullable = false, length = 14, unique = true, updatable = false)
     private String cnpj;
 
+    @Column (name = "email", nullable = false, length = 100)
+    private String email;
+
     @Column(name = "tipo_fornecedor", nullable = false)
     private TipoFornecedorEnum tipoFornecedor;
 
